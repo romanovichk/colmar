@@ -22,7 +22,6 @@ h1 {
 }
 
 .content3 h1 {
-  color: black;
   text-align: center;
   padding-bottom: 32px;
 }
@@ -43,6 +42,10 @@ h3 {
 
 #orange {
   color: #FFA61E;
+}
+
+#green {
+  color: #6DAD06;
 }
 
 /* Navigation */
@@ -96,6 +99,11 @@ nav {
   color: white;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.cta:hover {
+  background-color: #FFA61E;
+  transition: color .75s ease-in;
 }
 
 .content1 {
@@ -223,6 +231,7 @@ nav {
   justify-content: flex-start;
   padding: 16px;
   background-color: white;
+  height: 6rem;
 }
 
 .coursetitle {
@@ -261,9 +270,35 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: .7rem;
-  background-color: darkgrey;
+  background-color: #7ACBFF;
   color: white;
   height: 4rem;
   width: auto;
   padding: 16px 24px;
+}
+
+
+/* Responsive Midsize */
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .course {
+    width: 42%;
+    justify-content: space-around;
+  }
+}
+
+
+
+@media only screen and (max-width: 786px) {
+  .content2 content-left {
+    display: none;
+    color: blue;
+  }
 }
